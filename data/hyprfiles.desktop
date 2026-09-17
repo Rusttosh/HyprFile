@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=HyprFile
+Comment=A modern keyboard-first file manager for Linux
+Exec=hyprfiles %F
+Icon=hyprfiles
+Type=Application
+Terminal=false
+Categories=System;FileTools;FileManager;
+MimeType=inode/directory;
+Keywords=file;manager;folder;browser;

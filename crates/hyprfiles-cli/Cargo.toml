@@ -1,0 +1,23 @@
+[package]
+name = "hyprfiles-cli"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+
+[[bin]]
+name = "hyprfiles"
+path = "src/main.rs"
+
+[dependencies]
+hyprfiles-core = { path = "../hyprfiles-core" }
+hyprfiles-ui = { path = "../hyprfiles-ui" }
+hyprfiles-integrations = { path = "../hyprfiles-integrations" }
+tokio = { workspace = true }
+serde = { workspace = true }
+anyhow = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+clap = { version = "4", features = ["derive"] }

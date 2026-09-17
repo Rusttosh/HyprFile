@@ -1,0 +1,23 @@
+[package]
+name = "hyprfiles-ui"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+hyprfiles-core = { path = "../hyprfiles-core" }
+tokio = { workspace = true }
+serde = { workspace = true }
+anyhow = { workspace = true }
+tracing = { workspace = true }
+
+# Framework elegido: Iced 0.13.x (MSRV 1.80, coincide con workspace)
+# Renderers: wgpu (default, Vulkan/Metal/DX12) y tiny-skia (fallback software).
+# Feature tokio: integra el runtime async de Tokio con Commands/Subscriptions de Iced.
+iced = { version = "0.13", features = ["tokio"] }
+
+# Opcional para futuras previews de imágenes e iconos
+# iced = { version = "0.13", features = ["tokio", "image", "svg"] }

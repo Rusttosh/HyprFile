@@ -1,0 +1,36 @@
+[workspace]
+members = [
+    "crates/hyprfiles-core",
+    "crates/hyprfiles-ui",
+    "crates/hyprfiles-integrations",
+    "crates/hyprfiles-plugins",
+    "crates/hyprfiles-cli",
+]
+resolver = "3"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["Keiler Navarro <keiler@users.noreply.github.com>"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/4keiler/HyprFile"
+rust-version = "1.80"
+
+[workspace.dependencies]
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1", features = ["derive"] }
+toml = "0.8"
+anyhow = "1"
+thiserror = "2"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+notify = "6"
+trash = "5"
+mime = "0.3"
+dirs = "5"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true

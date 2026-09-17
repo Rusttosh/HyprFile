@@ -1,0 +1,53 @@
+[general]
+show_hidden = false
+confirm_delete = true
+default_layout = "yazi"
+open_dirs_on_single_click = false
+terminal = "foot"
+editor = "nvim"
+
+[ui]
+theme = "catppuccin-mocha"
+transparency = 0.92
+blur = true
+border_radius = 12
+padding = 8
+show_breadcrumb = true
+show_status_bar = true
+icon_theme = "Papirus-Dark"
+nerd_font_icons = true
+
+[preview]
+enabled = true
+max_file_size_mb = 10
+image_preview = true
+pdf_preview = true
+video_thumbnails = true
+syntax_highlighting = true
+
+[hyprland]
+enabled = true
+detect_active_monitor = true
+picker_mode_floating = true
+sync_with_pywal = false
+sync_with_matugen = false
+
+[behavior]
+trash_by_default = true
+permanent_delete_requires_phrase = true
+case_sensitive_sort = false
+directories_first = true
+
+[keybindings]
+quit = ["q"]
+open = ["Enter", "l"]
+parent = ["h"]
+down = ["j", "Down"]
+up = ["k", "Up"]
+search = ["/"]
+command_palette = [":"]
+toggle_hidden = ["."]
+trash = ["dd"]
+rename = ["r"]
+new_file = ["n"]
+new_folder = ["N"]
