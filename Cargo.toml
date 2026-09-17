@@ -13,7 +13,7 @@ version = "0.1.0"
 edition = "2021"
 authors = ["Keiler Navarro <keiler@users.noreply.github.com>"]
 license = "MIT OR Apache-2.0"
-repository = "https://github.com/4keiler/HyprFile"
+repository = "https://github.com/Rusttosh/HyprFile"
 rust-version = "1.80"
 
 [workspace.dependencies]

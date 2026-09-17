@@ -4,7 +4,7 @@
 
 ```bash
 # Clone
-git clone https://github.com/4keiler/HyprFile.git
+git clone https://github.com/Rusttosh/HyprFile.git
 cd HyprFile
 
 # Build
